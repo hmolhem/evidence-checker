@@ -1,0 +1,12 @@
+value,context_contains,reason
+1.2495,sample-level RMSE,"Ch8: RMSE over all 7,200 CHARACTERIZATION samples, recomputed from raw static_measurements.csv (1.24954)"
+0.02161,80 %RH UP follows,"Ch8: temperature slope of the 80 %RH UP cell, recomputed from raw data (-0.021608)"
+4.5569,cycles 2,"Ch12/16: mean C1 direction gap over cycles 2-5, hv009_cyclic_cycle_metrics.csv filtered Cycle_Index>=2 (-4.556913)"
+2.9851,conditioned cycles,"Ch12: mean C1 RMSE over cycles 2-5, hv009_cyclic_cycle_metrics.csv filtered Cycle_Index>=2"
+0.0873,rectangular term,"Ch14: 0.1512/sqrt(3) = 0.08730 (span-change sensitivity term)"
+1.426,guarded worst case becomes,"Ch14: UNC-002 0.22714 + 2*sqrt(0.59290^2 + 0.0873^2) = 1.4257"
+1.615,1.615 %RH at UNC-002,"Ch14: UNC-002 |bias| 0.227137 + small_sample_95_halfwidth 1.387573 (sup001_uncertainty_coverage_bracket.csv) = 1.61471"
+26.440,nominal-period,"Ch16: Phase_Lag_Deg/360 * Period_s = 15.86419/360*600 (hv009_sinusoidal_frequency_response.csv)"
+21.889,nominal-period,"Ch16: Phase_Lag_Deg/360 * Period_s = 26.26653/360*300"
+14.903,temperature trace,"Ch18: min Temperature_Reference_C over all 15,120 static rows (raw data audit 18-R01)"
+35.141,temperature trace,"Ch18: max Temperature_Reference_C over all 15,120 static rows (raw data audit 18-R01)"

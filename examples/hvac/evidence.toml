@@ -1,0 +1,49 @@
+# Evidence sources for the Sensor Validation & Metrology report (synthetic program).
+# `path` is relative to this file. Point it at your local clone of
+# hmolhem/hvac-sensor-validation-metrology (the tags must be fetched: git fetch --tags).
+
+[report]
+min_decimals = 3
+
+[[sources]]
+label = "v1.0.0 tables"
+type = "git"
+path = "../../../hvac-sensor-validation-metrology"
+ref = "v1.0.0"
+prefix = "reports/tables"
+glob = "*.csv"
+derived = true
+
+[[sources]]
+label = "v1.0.0 config"
+type = "git"
+path = "../../../hvac-sensor-validation-metrology"
+ref = "v1.0.0"
+prefix = "config"
+glob = "*.json"
+
+[[sources]]
+label = "pre-audit tables (472d4de)"
+type = "git"
+path = "../../../hvac-sensor-validation-metrology"
+ref = "472d4de60e3b3640a242615e15519e173f0c10f1"
+prefix = "reports/tables"
+glob = "*.csv"
+
+[[sources]]
+label = "SUP-001 v0.1.0"
+type = "git"
+path = "../../../hvac-sensor-validation-metrology"
+ref = "sup001-v0.1.0"
+prefix = "supplemental/SUP-001/outputs"
+glob = "*"
+derived = true
+
+[[sources]]
+label = "report-derived Ch8/Ch11 tables"
+type = "dir"
+path = "."
+glob = "ch08_ch11_static_tables_expected_output.csv"
+
+[waivers]
+file = "waivers.csv"
